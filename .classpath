@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="week11/q1"/>
+	<classpathentry kind="src" path="week11/q2"/>
+	<classpathentry kind="src" path="week11/q3"/>
+	<classpathentry kind="src" path="week11/q4"/>
+	<classpathentry kind="src" path="week11/q5"/>
+	<classpathentry kind="src" path="week12/q1"/>
+	<classpathentry kind="src" path="week12/q2"/>
+	<classpathentry kind="src" path="week12/q3"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
