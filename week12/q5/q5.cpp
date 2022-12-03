@@ -28,12 +28,9 @@ int main()
         }
     }
 
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n; ++j) {
-            if (ans[i][j] == k) {
-                finans++;
-            }
-        }
+    int N = sizeof(ans)/sizeof(ans[0]);
+    for (int i = 0; i < n; ++i){
+        finans += count(ans[i],ans[i]+N,k);
     }
     cout << finans << endl;
 
