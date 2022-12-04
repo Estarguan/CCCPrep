@@ -12,7 +12,8 @@ for x in range(n):
             if mat[j][i] == "#":
                 if j+1 > max:
                     max = j+1
+                    print(max)
                 if j+1 < min:
                     min = j+1
+                    print(min)
     print(max-min)
-
