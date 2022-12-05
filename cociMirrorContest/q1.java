@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class question1 {
+public class inclass_practice {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class question1 {
 					}
 				}
 			}
-			System.out.println(max-min + "\n");
+			System.out.println(max-min);
 		}
 
 	}
