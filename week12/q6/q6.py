@@ -1,17 +1,37 @@
-k,n = map(int, input().split())
-ranks =[]
-ans = [[0]*n for _ in range(n)]
-finans = 0
-for i in range(k):
-    ranks.append(list(map(int, input().split())))
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+count = n-1
+lst = ["M","_"]
+for i in range(n-2):
+    lst.append("M")
+for i in range(1, n):
+    if i > 1:
+        if lst[i] == "M":
+            continue
+        elif lst[i] == "_":
+            if lst[i-2] == "_":
+                lst[i] = "M"
+                lst[i+1] = "_"
+
+            else:
+                if lst[i-2] != "M":
+                    lst[i+1] = "_"
+                    count -= 1
+    else:
+        lst[i+1] = "M"
+        lst[i+2] = "_"
+        count -=1
 
 
+print(count)
+for i in lst:
+    print(i, end="")
+#_MM_M
+#_MM__
 
-for x in range(k): #0
-    for y in range(n): #0
-        for z in range(y+1, n): #0
-            temp = ranks[x][y]
-            ans[temp-1][ranks[x][z]-1] += 1
-for i in ans:
-    finans += i.count(k)
-print(finans)
+# 6
+# MM_MM_
+# 7
+# _MM_MM_
