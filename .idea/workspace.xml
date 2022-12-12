@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db840afb-4636-42dc-b58b-e55360c28aef" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week12/q6/q6.py" beforeDir="false" afterPath="$PROJECT_DIR$/week12/q6/q6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week12/q6/q6.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +32,31 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Estar/OneDrive/Documents/Work/Coding/PycharmProjects&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Estar/OneDrive/Documents/Work/Coding/PycharmProjects/heloaqs&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.q6">
+  <component name="RunManager" selected="Python.q4">
+    <configuration name="q4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CodingHomeworks" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week13/q4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week13/q4/q4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="q5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CodingHomeworks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.q4" />
         <item itemvalue="Python.q6" />
         <item itemvalue="Python.q5" />
         <item itemvalue="Python.q7" />
@@ -138,8 +160,8 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/week12/q6/q6.py</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/week13/q4/q4.py</url>
+          <line>11</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
