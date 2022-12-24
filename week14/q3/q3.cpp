@@ -14,7 +14,7 @@ int main()
         cin >> temp;
         nums.push_back(temp);
     }
-    stable_sort(nums.begin(), nums.end(), [](int x, int y){
+    sort(nums.begin(), nums.end(), [](int x, int y){
          return x > y;
     });
 

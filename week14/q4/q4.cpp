@@ -21,7 +21,7 @@ int main()
     sort(pc.begin(), pc.end(), [](pair<string, int> x, pair<string, int> y)
          { return x.first > y.first; });
     sort(pc.begin(), pc.end(), [](pair<string, int> x, pair<string, int> y)
-         { return x.second > y.second; });
+         { return x.second < y.second; });
     if (pc.empty())
     {
         return 0;
