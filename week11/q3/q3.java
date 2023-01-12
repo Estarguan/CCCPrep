@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class randomTesting {
+public class q3 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -36,6 +36,7 @@ public class randomTesting {
 		for (int i = 0; i < k; ++i) {
 			System.out.println(ans3);
 		}
+		input.close();
 	}
 
 }

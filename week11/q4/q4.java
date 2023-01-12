@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class randomTesting{
+public class q4{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int k;
@@ -14,6 +14,7 @@ public class randomTesting{
 			}else {
 				System.out.print((char)x);
 			}
+			input.close();
 		}
 	}
 }

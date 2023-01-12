@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HelloWorld{
+public class q3{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int t1 = input.nextInt(), t2 = input.nextInt();
@@ -12,6 +12,6 @@ public class HelloWorld{
             num++;
         }
         System.out.println(num);
-
+        input.close();
     }
 }

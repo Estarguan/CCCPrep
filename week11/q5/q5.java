@@ -22,5 +22,6 @@ public class q5{
       }
     }
     System.out.println(ans);
+    input.close();
   }
 }

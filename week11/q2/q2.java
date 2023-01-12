@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class randomTesting {
+public class q2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,6 +18,7 @@ public class randomTesting {
 		}else {
 			System.out.println("No Fish");
 		}
+		input.close();
 	}
 
 }

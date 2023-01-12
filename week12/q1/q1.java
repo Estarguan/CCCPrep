@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HelloWorld{
+public class q1{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int ant = input.nextInt(), eye = input.nextInt();
@@ -13,5 +13,6 @@ public class HelloWorld{
         if (ant <= 2 && eye <= 4){
             System.out.println("GraemeMercurian");
         }
+        input.close();
     }
 }

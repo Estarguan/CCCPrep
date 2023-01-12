@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class randomTesting{
+public class q2{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int h = input.nextInt(), m = input.nextInt();
@@ -14,5 +14,6 @@ public class randomTesting{
 		if(!ans) {
 			System.out.println("The balloon does not touch ground in the given time.");
 		}
+		input.close();
 	}
 }
