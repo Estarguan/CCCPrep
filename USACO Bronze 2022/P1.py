@@ -1,13 +1,16 @@
-import sys
-input = sys.stdin.readline
+n = int(input())
+nums = list(map(int, input().split()))
 
-t = int(input())
-for _ in range(t):
-    n,k = map(int,input().strip().split())
-    cows = list(input().strip())
-    count = 0
-    if k == 0:
-        print(cows)
-        continue
+nums.sort()
 
-    print(cows)
+ans = 0
+tuition = 0
+
+for i in range(n):
+    fee = nums[i]
+    money = (n - i) * fee
+    if money > ans:
+        ans = money
+        tuition = fee
+
+print(ans, tuition)

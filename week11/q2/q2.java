@@ -2,7 +2,6 @@ import java.util.Scanner;
 public class q2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
 		int f1, f2, f3, f4;
 		f1 = input.nextInt();

@@ -11,5 +11,6 @@ public class q2{
             }
         }
         System.out.println(count);
+        s.close();
     }
 }

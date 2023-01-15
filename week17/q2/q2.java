@@ -36,6 +36,6 @@ public class q2 {
 		if (length > maxlen)
 		{maxlen = length;}
 		System.out.println(maxlen);
-
+		s.close();
   }
 }
