@@ -15,8 +15,4 @@ public class q5 {
         }
         System.out.println((count > 2)?"NO":"YES");
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d6972d4 (added some qeustions)

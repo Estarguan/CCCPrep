@@ -9,8 +9,4 @@ int main()
   }
   string ans = (count > 2) ? "NO": "YES";
   cout << ans;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d6972d4 (added some qeustions)
