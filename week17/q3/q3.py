@@ -15,3 +15,4 @@ for i in range(n):
 		elif gift[i].isalpha():
 			ans += gift[i]
 	print(ans)
+#code has failed test cases for some reason
