@@ -15,7 +15,7 @@ public class q6 {
       if (money>ans){
         ans = money;
         tuition = fee;
-      }
+      } 
 
     }
     System.out.print(ans + " " + tuition);
