@@ -1,13 +1,36 @@
-import sys
-input = sys.stdin.readline
-
+m = int(input())
 n = int(input())
-trees = []
-prev = 0
-for i in range(0,n):
-  trees.append(int(input())+prev)
-  prev = trees[i]
-q = int(input())
-for i in range(q):
-  n1,n2 = map(int, input().split())
-  print(trees[n2]-trees[n1-1] if n1 != 0 else trees[n2])
+k = int(input())
+
+paintRow = [False] * m
+paintCol = [False] * n
+
+for i in range(k):
+    rc, pos = input().split()
+    pos = int(pos) - 1
+
+    if rc == "R":
+        paintRow[pos] = not paintRow[pos]
+    else:
+        paintCol[pos] = not paintCol[pos]
+
+gold = 0
+black_rows = 0
+gold_rows = 0
+
+
+for i in range(m):
+    if paintRow[i] == True:
+        gold_rows += 1
+        gold += n
+    else:
+        black_rows += 1
+
+newGold = 0
+
+for i in range(n):
+    if paintCol[i] == True:
+        newGold = black_rows - gold_rows
+        gold += newGold
+
+print(gold)
