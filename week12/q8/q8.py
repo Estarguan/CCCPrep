@@ -10,3 +10,4 @@ for c in s:
         for i in range(len(ex)):
             stk.pop()
 print("FRULA") if len(stk) == 0 else print("".join(stk))
+a
