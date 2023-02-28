@@ -1,1 +1,0 @@
-word,grid,cur,n,i,j
