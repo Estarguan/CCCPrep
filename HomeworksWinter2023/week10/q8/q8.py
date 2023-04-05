@@ -1,22 +1,18 @@
-
 def backtrack(n):
     global ans
     t1,t2 = games[n]
-    
     scores[t1-1] += 3
     if n != 5-G:
         backtrack(n+1)
     if scores[T-1] == max(scores) and scores.count(max(scores)) == 1 and n == 5-G:
         ans += 1
     scores[t1-1] -= 3
-
     scores[t2-1] += 3
     if n != 5-G:
       backtrack(n+1)
     if scores[T-1] == max(scores) and scores.count(max(scores)) == 1 and n == 5-G:
         ans += 1
     scores[t2-1] -= 3
-
     scores[t1-1] += 1
     scores[t2-1] += 1
     if n != 5-G:
@@ -39,6 +35,5 @@ for i in range(G):
     elif sa < sb:
         scores[b-1]+=3
     games.remove((a,b))
-
 backtrack(0)
 print(ans)
