@@ -1,16 +1,16 @@
 n,m = map(int,input().split())
-grid = [[False]*n for i in range(n)]
 unreachable = set()
 for i in range(m):
     y,x = map(int,input().split())
     y-=1
     x-=1
+    unreachable.add((x,y))
     #vertical
     for j in range(n):
-        unreachable.add((x,i))
+        unreachable.add((x,j))
     #horizontal right
     for j in range(n):
-        unreachable.add((i,y))
+        unreachable.add((j,y))
     tempx,tempy = x+1,y+1
     while tempx != n and tempy != n:
         unreachable.add((tempx,tempy))
@@ -31,7 +31,5 @@ for i in range(m):
         unreachable.add((tempx,tempy))
         tempx += 1
         tempy -= 1
-    for i in range(n):
-        print(grid[i])
-    print(unreachable)
-    print(n*n-len(unreachable))
+    
+print(n*n-len(unreachable))
