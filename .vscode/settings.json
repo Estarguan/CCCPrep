@@ -1,4 +1,9 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "string_view": "cpp",
+    "regex": "cpp",
+    "ranges": "cpp"
+  }
 }
