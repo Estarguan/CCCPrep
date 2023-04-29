@@ -15,9 +15,11 @@ for i in range(k):
         top_score = scores[j][i] + nums[j]
     
     scores[j].append(scores[j][i] + nums[j])
-
-  sorted_nums = sorted(nums,reverse=True)
-  ranks = [sorted_nums.index(x)+1 for x in nums]
+  lst = []
+  for i in range(n):
+    lst.append(scores[i][-1])
+  sorted_nums = sorted(lst,reverse=True)
+  ranks = [sorted_nums.index(x)+1 for x in lst]
 
   for i in range(n):
 
@@ -30,7 +32,3 @@ top = []
 for i in range(n):
   if scores[i][-1] == top_score:
     print("Yodeller " + str(i+1)+ " is the TopYodeller: score " + str(top_score) +", worst rank " + str(worst_rank[i]))
-
-
-
-

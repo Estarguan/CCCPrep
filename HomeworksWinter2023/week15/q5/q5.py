@@ -3,9 +3,9 @@ for _ in range(10):
   R,T,A = input().split()
   
   A = list(A)
-  ans = len(A)
+  
   rules = {}
-  lengths = {}
+
   letters = {}
   
   for j in A:
@@ -13,7 +13,7 @@ for _ in range(10):
   for i in range(int(R)):
     C, S = input().split()
     rules[C] = S
-    lengths[C]= len(S)
+
     
   for i in range(int(T)):
     
@@ -26,15 +26,15 @@ for _ in range(10):
       if k in rules:
         if k in changed:
           amount = letters[k] - changed[k]
-          letters[k] = letters.get(k,0)-letters[k] + changed[k]
+          letters[k] -= amount
         else:
           amount = letters[k]
-          letters[k] = letters.get(k,0)-letters[k]
+          letters[k] = 0
 
         for z in rules[k]:
           letters[z] = letters.get(z,0) + amount
-          changed[z] = amount
-    print(letters)
+          if z != k:
+            changed[z] = changed.get(z,0) + amount
     for j in range(len(A)):
       if A[j] in rules:
         A[j] = rules[A[j]]
@@ -45,6 +45,8 @@ for _ in range(10):
     A = list(A)
     A = [A[0],A[-1]]
 
-  
+  ans = 0
+  for k,v in letters.items():
+    ans += v
   print(A[0]+A[-1], ans)
   
