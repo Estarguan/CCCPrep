@@ -6,7 +6,7 @@ for _ in range(10):
     event = list(map(int,input().split()))
     for i in range(m):
         events[event[i]] = events.get(event[i],0) + 1
-     for i in range(d):
+    for i in range(d):
       if n == 0:
         wash += 1
         n = shirt_count
