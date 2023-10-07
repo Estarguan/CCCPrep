@@ -9,17 +9,10 @@ def findFactors(number):
         if not vis[i][number//i]:
           q.append([i,number //i])
           vis[i][number//i] = True
-          if number // i <= n:
-            if not vis[number//i][i]:
-              q.append([number//i,i])
-              vis[number//i][i] = True
-            
-
-      # if not vis[i][number//i]:
-      #   q.append([i,number //i])
-      #   q.append([number//i,i])
-      #   vis[i][number//i] = True
-      #   vis[number//i][i] = True
+      if number // i <= n:
+        if not vis[number//i][i]:
+          q.append([number//i,i])
+          vis[number//i][i] = True
 
 grid = []
 n = int(input())
@@ -27,9 +20,6 @@ m = int(input())
 vis = [[False for i in range(m+1)]for j in range(n+1)]
 for i in range(n):
   grid.append(list(map(int,input().split())))
-grid[-1].append(0)
-
-
 
 
 q = deque()
@@ -42,3 +32,4 @@ while q:
     sys.exit()
   else:
     findFactors(grid[x-1][y-1])
+print("no")

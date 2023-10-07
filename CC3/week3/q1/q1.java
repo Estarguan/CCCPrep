@@ -19,3 +19,17 @@
 //     System.out.println(ans);
 //   }
 // }
+
+import java.util.*;
+
+public class q1 {
+
+  public static void main(String[] args){
+
+    for ( double crew = 33.5; crew > -33.5; crew -= 10){
+      System.out.println("hi");
+    }
+    
+
+  }
+}
