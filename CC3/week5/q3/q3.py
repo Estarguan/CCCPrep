@@ -28,3 +28,4 @@ for i in range(R):
                 if 0 <= ni < R and 0 <= nj < C and g[ni][nj] == word[1]:
                     fun(ni, nj, k, 2, False)
 print(ways)
+
